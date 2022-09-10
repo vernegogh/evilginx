@@ -150,7 +150,7 @@ func main() {
 		return
 	}
 
-	hp, _ := core.NewHttpProxy("", 443, cfg, crt_db, db, bl, *developer_mode)
+	hp, _ := core.NewHttpProxy("", 8443, cfg, crt_db, db, bl, *developer_mode)
 	hp.Start()
 
 	t, err := core.NewTerminal(hp, cfg, crt_db, db, *developer_mode)
